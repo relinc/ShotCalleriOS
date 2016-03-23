@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8485FB001B9512ED00AE9E67 /* REL_LOGO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8485FAFF1B9512ED00AE9E67 /* REL_LOGO.jpg */; };
+		8485FB021B95177600AE9E67 /* REL_LOGO_LINK.png in Resources */ = {isa = PBXBuildFile; fileRef = 8485FB011B95177600AE9E67 /* REL_LOGO_LINK.png */; };
+		8485FB031B9638AA00AE9E67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E147561B9126F20005E881 /* Images.xcassets */; };
 		84E147501B9126F20005E881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1474F1B9126F20005E881 /* AppDelegate.swift */; };
 		84E147521B9126F20005E881 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E147511B9126F20005E881 /* ViewController.swift */; };
 		84E147551B9126F20005E881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E147531B9126F20005E881 /* Main.storyboard */; };
-		84E147571B9126F20005E881 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E147561B9126F20005E881 /* Images.xcassets */; };
 		84E1475A1B9126F20005E881 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E147581B9126F20005E881 /* LaunchScreen.xib */; };
 		84E147661B9126F20005E881 /* Shot_CallerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E147651B9126F20005E881 /* Shot_CallerTests.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8485FAFF1B9512ED00AE9E67 /* REL_LOGO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = REL_LOGO.jpg; sourceTree = "<group>"; };
+		8485FB011B95177600AE9E67 /* REL_LOGO_LINK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = REL_LOGO_LINK.png; sourceTree = "<group>"; };
 		84E1474A1B9126F20005E881 /* Shot Caller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shot Caller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E1474E1B9126F20005E881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84E1474F1B9126F20005E881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,11 +81,13 @@
 		84E1474C1B9126F20005E881 /* Shot Caller */ = {
 			isa = PBXGroup;
 			children = (
+				8485FB011B95177600AE9E67 /* REL_LOGO_LINK.png */,
 				84E1474F1B9126F20005E881 /* AppDelegate.swift */,
 				84E147511B9126F20005E881 /* ViewController.swift */,
 				84E147531B9126F20005E881 /* Main.storyboard */,
 				84E147561B9126F20005E881 /* Images.xcassets */,
 				84E147581B9126F20005E881 /* LaunchScreen.xib */,
+				8485FAFF1B9512ED00AE9E67 /* REL_LOGO.jpg */,
 				84E1474D1B9126F20005E881 /* Supporting Files */,
 			);
 			path = "Shot Caller";
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					84E147491B9126F20005E881 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 64BLJ7S93G;
 					};
 					84E1475E1B9126F20005E881 = {
 						CreatedOnToolsVersion = 6.4;
@@ -192,9 +199,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8485FB001B9512ED00AE9E67 /* REL_LOGO.jpg in Resources */,
+				8485FB031B9638AA00AE9E67 /* Images.xcassets in Resources */,
+				8485FB021B95177600AE9E67 /* REL_LOGO_LINK.png in Resources */,
 				84E147551B9126F20005E881 /* Main.storyboard in Resources */,
 				84E1475A1B9126F20005E881 /* LaunchScreen.xib in Resources */,
-				84E147571B9126F20005E881 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +351,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Shot Caller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +365,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Shot Caller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +428,7 @@
 				84E1476B1B9126F20005E881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84E1476C1B9126F20005E881 /* Build configuration list for PBXNativeTarget "Shot CallerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +437,7 @@
 				84E1476E1B9126F20005E881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
